@@ -62,7 +62,7 @@ describe("Android native features tests", () => {
     await driver.pause(3000);
   });
 
-  it.only("Pick date", async () => {
+  it("Pick date", async () => {
     await driver.startActivity("io.appium.android.apis", ".view.DateWidgets1");
 
     const date = $('//*[@resource-id="io.appium.android.apis:id/dateDisplay"]');
