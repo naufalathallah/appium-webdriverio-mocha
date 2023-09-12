@@ -24,7 +24,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test/specs/**/*.js"],
+  specs: ["./test/specs/android/delete-note-screen*.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -58,7 +58,11 @@ exports.config = {
       "appium:deviceName": "Nexus 5 API 33 Tiramisu",
       "appium:platformVersion": "13",
       "appium:automationName": "UIAutomator2",
-      "appium:app": path.join(process.cwd(), "app/android/ApiDemos-debug.apk"),
+      "appium:app": path.join(
+        process.cwd(),
+        "app/android/ColorNote+Notepad.apk"
+      ),
+      "appium:autoGrantPermissions": true,
     },
   ],
 
