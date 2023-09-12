@@ -55,8 +55,8 @@ exports.config = {
     {
       // capabilities for local Appium web tests on an Android Emulator
       "appium:platformName": "Android",
-      "appium:deviceName": "Nexus 5 API 27",
-      "appium:platformVersion": "8.1",
+      "appium:deviceName": "Nexus 5 API 33 Tiramisu",
+      "appium:platformVersion": "13",
       "appium:automationName": "UIAutomator2",
       "appium:app": path.join(process.cwd(), "app/android/ApiDemos-debug.apk"),
     },
