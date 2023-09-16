@@ -22,14 +22,16 @@ config.capabilities = [
 // your test setup with almost no effort. Unlike plugins, they don't add new
 // commands. Instead, they hook themselves up into the test process.
 (config.services = [
-  "appium",
-  {
-    args: {
-      address: "localhost",
-      port: 4723,
-      relaxedSecurity: true,
+  [
+    "appium",
+    {
+      args: {
+        address: "localhost",
+        port: 4723,
+        relaxedSecurity: true,
+      },
+      logpath: "./",
     },
-    logpath: "./",
-  },
+  ],
 ]),
   (exports.config = config);
