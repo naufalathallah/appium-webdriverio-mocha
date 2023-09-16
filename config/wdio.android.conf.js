@@ -3,7 +3,7 @@ const { config } = require("./wdio.shared.conf");
 
 config.port = 4723;
 
-config.specs = ["./test/specs/android/add-note-screen*.js"];
+config.specs = ["../test/specs/android/add-note-screen*.js"];
 
 config.capabilities = [
   {
