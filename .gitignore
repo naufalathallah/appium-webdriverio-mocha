@@ -2,3 +2,4 @@ node_modules/
 .DS_Store
 .env
 wdio-appium.log
+allure-results/
