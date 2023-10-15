@@ -22,6 +22,7 @@
     "wdio": "wdio run ./wdio.conf.js"
   },
   "dependencies": {
-    "allure-commandline": "^2.24.0"
+    "allure-commandline": "^2.24.0",
+    "appium-xcuitest-driver": "^5.7.0"
   }
 }
